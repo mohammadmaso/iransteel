@@ -1,0 +1,30 @@
+{
+  "name": "iranetesal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammadmaso/iransteel-FrontEnd.git"
+  },
+  "author": "mohammad masoudie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammadmaso/iransteel-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/mohammadmaso/iransteel-FrontEnd#readme",
+  "devDependencies": {
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "fullpage.js": "^3.0.7",
+    "shabnam-font": "^4.0.0",
+    "vazir-font": "^21.0.1"
+  }
+}
