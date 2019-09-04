@@ -1,0 +1,5 @@
+@import '~shabnam-font\dist\font-face.css';
+@import '~vazir-font\dist\font-face.css';
+body{
+     font-family:'Shabnam', sans-serif;
+}
