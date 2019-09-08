@@ -29,7 +29,10 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "fullpage.js": "^3.0.7",
+    "ionicons": "^4.6.3",
+    "jquery": "^3.4.1",
     "nprogress": "^0.2.0",
+    "popper.js": "^1.15.0",
     "shabnam-font": "^4.0.0",
     "vazir-font": "^21.0.1"
   }

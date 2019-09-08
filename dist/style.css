@@ -1,9 +1,13 @@
 @import '~shabnam-font\dist\font-face.css';
 @import '~vazir-font\dist\font-face.css';
+
+
+
 body{
      font-family:'Shabnam', sans-serif;
 }
 .section {
      text-align:center;
      font-size: 3em;
+     z-index: 9999;
    }

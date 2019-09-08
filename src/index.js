@@ -1,7 +1,13 @@
 import fullpage  from 'fullpage.js'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
-new fullpage('#fullpage', {
-    sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-  });
+var myFullpage = new fullpage('#fullpage', {
+    anchors: ['firstPage', 'secondPage', '3rdPage'],
+    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+    navigation: true,
+    navigationPosition: 'right',
+    navigationTooltips: ['First page', 'Second page', 'Third and last page']
+});
