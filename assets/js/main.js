@@ -1,0 +1,1 @@
+$('#BasketPopover').popover();
