@@ -1,0 +1,16 @@
+{
+    "name": "Iran Etesal",
+    "short_name": "IE",
+    "start_url": "/index.html",
+    "icons": [
+      {
+        "src": "/icons/icon36.png",
+        "sizes": "36x36",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#4969E1",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientation": "portrait"
+  }
