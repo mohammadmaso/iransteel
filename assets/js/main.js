@@ -8,17 +8,15 @@ var interval = setInterval(function() {
     if (timer === 0) clearInterval(interval);
 }, 1000);
 
+let installPromptEvent;
 
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome <= 67 from automatically showing the prompt
+  event.preventDefault();
   // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can add to home screen
-  showInstallPromotion();
-
-  
-
+  installPromptEvent = event;
+  // Update the install UI to notify the user app can be installed
+  document.querySelector('#install-button').disabled = false;
 });
 btnAdd.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
@@ -36,4 +34,3 @@ btnAdd.addEventListener('click', (e) => {
         deferredPrompt = null;
       });
   });
-
