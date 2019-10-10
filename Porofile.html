@@ -1,103 +1,315 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>ایران اتصال</title>
+    <link rel="stylesheet" href="assets/semantic/semantic.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css" />
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css" />
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css" />
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.compiled.css" />
+    <link rel="stylesheet" href="assets/fonts/font-face.css" />
+    <link rel="stylesheet" href="assets/fonts/icon.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>IraneEtesal-v2</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Harmattan">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
-    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
-    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/styles.compiled.css">
-</head>
+  <body>
+    <button
+      class="btn btn-primary btn-sm"
+      onclick="topFunction()"
+      id="upbtn"
+      title="Go to top"
+    >
+      رفتن به ابتدا
+    </button>
+    <nav
+      id="navbar"
+      class="navbar navbar-dark navbar-expand-md sticky-top"
+      style="background-color: #1b1b1b;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="/assets/img/header.png"
+            alt="Iran-Etesal"
+            id="logo"
+            class="float-right"
+          />
+        </a>
+        <div
+          class="collapse navbar-collapse"
+          id="navcol-1"
+          style="width: 100%;margin-left: 10px;"
+        >
+          <ul
+            class="nav navbar-nav mr-auto"
+            style="margin-bottom: 15px;padding-right: 16px;"
+          >
+            <li class="nav-item" role="presentation"></li>
+            <li class="nav-item" role="presentation"></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="./store.html">فروشگاه</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="./index.html">صفحه اصلی</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          data-target="#navcol-1"
+          data-toggle="collapse"
+          class="navbar-toggler"
+        >
+          <span class="">منو</span><i class="bars icon inverted large"></i>
+        </button>
 
-<body>
-    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-dark w-100">
-        <div class="container-fluid"><a class="navbar-brand" href="#">IranEtesal.com</a>
-            <div class="collapse navbar-collapse" id="navcol-1" style="width: 100%;margin-left: 10px;">
-                <ul class="nav navbar-nav mr-auto" style="margin-bottom: 15px;padding-right: 16px;">
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">فروشگاه</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">صفحه اصلی</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">محصولات</a></li>
-                </ul>
-            </div><button data-target="#navcol-1" data-toggle="collapse" class="navbar-toggler" style="margin-right: 15px;padding-left: 14px;padding-right: 14px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <i
-                class="la la-shopping-cart" style="color: rgb(255,255,255);font-size: 33px;width: 32px;"></i><i class="la la-user" style="color: rgb(255,218,26);font-size: 33px;width: 32px;margin-right: 15px;margin-left: 13px;"></i></div>
+        <i
+          class="large inverted shopping cart icon m-2 header-icon"
+          data-toggle="popover"
+          id="BasketPopover"
+        ></i>
+        <i
+          class="large inverted user icon m-2 header-icon yellow"
+          data-toggle="modal"
+          data-target="#loginModal"
+          data-backdrop="true"
+        >
+        </i>
+      </div>
     </nav>
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-right d-md-flex justify-content-md-start align-items-md-center" style="margin-bottom: 10px;margin-top: 10px;"><i class="material-icons" style="margin-left: 7px;">settings</i><span>پروفایل کاربری</span></div>
-                <div class="col">
-                    <hr>
-                </div>
-            </div>
+    <!-- dashbord -->
+
+    <div class="container mt-5 mb-3">
+      <div class="row">
+        <div class="col mr-1 ml-1">
+          <div class="border rounded p-3 text-right">
+            <h4><i class="user icon m-2"></i>پروفایل کاربری</h4>
+            <strong><i class=" circle icon m-2"></i>شرکت سازه آرمان</strong>
+            <hr />
+
+            <nav class="nav flex-column">
+              <a class="nav-link active" href="#">سابقه خرید</a>
+              <a class="nav-link" href="#">تنظیمات پروفایل</a>
+              <a class="nav-link btn btn-danger mt-2" href="#"
+                >خروج از پروفایل</a
+              >
+            </nav>
+          </div>
         </div>
-    </div>
-    <div>
-        <div class="container border rounded">
-            <div class="row">
-                <div class="col text-right" style="padding-top: 15px;padding-bottom: 15px;">
-                    <div class="d-flex flex-row"><img class="rounded-circle border rounded border-secondary shadow-sm" src="https://via.placeholder.com/100" style="margin-left: 10px;">
-                        <div class="d-flex flex-column"><span style="font-size: 20px;">ماهان طریقتی</span><span>مشتری ممتاز</span></div>
-                    </div>
-                    <ul class="nav nav-tabs d-flex flex-column" style="padding-right: 0px;margin-top: 10px;">
-                        <li class="nav-item"><a class="nav-link active" href="#">تنظیمات کاربری</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">سابقه خرید</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">خروج</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-8 col-lg-9 text-right" style="padding-top: 15px;padding-bottom: 15px;">
-                    <ul class="list-group" style="padding-right: 0px;">
-                        <li class="list-group-item d-flex flex-column"><span style="font-size: 21px;margin-bottom: 11px;">خرید شماره 1</span><span style="font-size: 11px;">تاریخ 1398/8/9</span><span style="font-size: 13px;color: rgb(118,133,149);">توضیحات خرید: لورم اپیسم متنی ساختگی می باشد برای تست در فرایند برنامه نویسی محصول که ما با توجه به آن رابط کاربری برنامه را طراحی میکنیم.&nbsp;</span>
-                            <span
-                                class="d-md-flex align-items-md-center" style="font-size: 13px;">وضعیت خرید : پرداخت شده&nbsp;<i class="icon ion-android-checkbox-outline" style="font-size: 26px;color: rgb(9,179,26);"></i></span>
-                        </li>
-                        <li class="list-group-item d-flex flex-column"><span style="font-size: 21px;margin-bottom: 11px;">خرید شماره 2</span><span style="font-size: 11px;">تاریخ 1398/8/9</span><span style="font-size: 13px;color: rgb(118,133,149);">توضیحات خرید: لورم اپیسم متنی ساختگی می باشد برای تست در فرایند برنامه نویسی محصول که ما با توجه به آن رابط کاربری برنامه را طراحی میکنیم.&nbsp;</span>
-                            <span
-                                class="d-md-flex align-items-md-center" style="font-size: 13px;">وضعیت خرید : پرداخت نشده&nbsp;<i class="icon ion-android-close" style="font-size: 26px;color: rgb(179,9,9);"></i></span>
-                        </li>
-                        <li class="list-group-item d-flex flex-column"><span style="font-size: 21px;margin-bottom: 11px;">خرید شماره 3</span><span style="font-size: 11px;">تاریخ 1398/8/9</span><span style="font-size: 13px;color: rgb(118,133,149);">توضیحات خرید: لورم اپیسم متنی ساختگی می باشد برای تست در فرایند برنامه نویسی محصول که ما با توجه به آن رابط کاربری برنامه را طراحی میکنیم.&nbsp;</span>
-                            <span
-                                class="d-md-flex align-items-md-center" style="font-size: 13px;">وضعیت خرید : پرداخت شده&nbsp;<i class="icon ion-android-checkbox-outline" style="font-size: 26px;color: rgb(9,179,26);"></i></span>
-                        </li>
-                    </ul>
-                </div>
+        <!--itemesss-->
+        <div class="col-md-8">
+          <div class="border rounded p-3 text-right">
+            <!--item-->
+            <div class="mb-2">
+              <h4>خرید شماره ۲۵۸۷۵</h4>
+              <span
+                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
+                مقدار : زانویی مانیسمان | ۸ بسته</span
+              >
+              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
+              <span
+                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
+                  class="badge badge-pill badge-success"
+                  >پرداخت شده</span
+                ></span
+              >
+              <br />
+              <a class="btn btn-sm  btn-outline-info mt-2 "
+                >دانلود پیش فاکتور</a
+              >
+              <hr />
             </div>
+            <div class="mb-2">
+              <h4>خرید شماره ۲۵۸۷۵</h4>
+              <span
+                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
+                مقدار : زانویی مانیسمان | ۸ بسته</span
+              >
+              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
+              <span
+                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
+                  class="badge badge-pill badge-success"
+                  >پرداخت شده</span
+                ></span
+              >
+              <br />
+              <a class="btn btn-sm  btn-outline-info mt-2 "
+                >دانلود پیش فاکتور</a
+              >
+              <hr />
+            </div>
+            <div class="mb-2">
+              <h4>خرید شماره ۲۵۸۷۵</h4>
+              <span
+                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
+                مقدار : زانویی مانیسمان | ۸ بسته</span
+              >
+              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
+              <span
+                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
+                  class="badge badge-pill badge-danger"
+                  >پرداخت نشده</span
+                ></span
+              >
+              <br />
+              <a class="btn btn-sm  btn-outline-info mt-2 "
+                >دانلود پیش فاکتور</a
+              >
+              <hr />
+            </div>
+            <div class="mb-2">
+              <h4>خرید شماره ۲۵۸۷۵</h4>
+              <span
+                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
+                مقدار : زانویی مانیسمان | ۸ بسته</span
+              >
+              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
+              <span
+                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
+                  class="badge badge-pill badge-success"
+                  >پرداخت شده</span
+                ></span
+              >
+              <br />
+              <a class="btn btn-sm  btn-outline-info mt-2 "
+                >دانلود پیش فاکتور</a
+              >
+              <hr />
+            </div>
+            <div class="mb-2">
+              <h4>خرید شماره ۲۵۸۷۵</h4>
+              <span
+                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
+                مقدار : زانویی مانیسمان | ۸ بسته</span
+              >
+              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
+              <span
+                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
+                  class="badge badge-pill badge-success"
+                  >پرداخت شده</span
+                ></span
+              >
+              <br />
+              <a class="btn btn-sm  btn-outline-info mt-2 "
+                >دانلود پیش فاکتور</a
+              >
+              <hr />
+            </div>
+            <div class="mb-2">
+              <h4>خرید شماره ۲۵۸۷۵</h4>
+              <span
+                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
+                مقدار : زانویی مانیسمان | ۸ بسته</span
+              >
+              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
+              <span
+                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
+                  class="badge badge-pill badge-success"
+                  >پرداخت شده</span
+                ></span
+              >
+              <br />
+              <a class="btn btn-sm  btn-outline-info mt-2 "
+                >دانلود پیش فاکتور</a
+              >
+              <hr />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="footer-basic" style="padding-bottom: 0px;background-color: rgb(52,58,64);">
-        <footer>
-            <div class="social"><a href="#"><i class="fab fa-instagram" style="color: rgb(255,255,255);"></i></a><a href="#"><i class="icon ion-social-facebook" style="color: rgb(255,255,255);"></i></a></div>
-            <ul class="list-inline" style="color: rgb(239,239,239);">
-                <li class="list-inline-item"><a href="#">صفحه اصلی</a></li>
-                <li class="list-inline-item"><a href="#">محصولات</a></li>
-                <li class="list-inline-item"><a href="#">درباره ما</a></li>
-                <li class="list-inline-item"><a href="#">ارتباط با ما</a></li>
-            </ul>
-            <p class="copyright">IranEtesal © 2019</p>
-            <p class="lead copyright" style="margin-top: 1px;padding-bottom: 15px;">Designe and Develop by EnigmaGroup.ir</p>
-        </footer>
+
+    <div class="footer-basic" style="background-color: rgb(37, 37, 37);">
+      <footer>
+        <div class="social">
+          <a class="fa fa-instagram"> </a>
+          <a class="fa fa-telegram"></a>
+        </div>
+        <ul class="list-inline" style="color: rgb(239,239,239);">
+          <li class="list-inline-item"><a href="#">صفحه اصلی</a></li>
+          <li class="list-inline-item"><a href="#">محصولات</a></li>
+          <li class="list-inline-item"><a href="#">درباره ما</a></li>
+          <li class="list-inline-item"><a href="#">ارتباط با ما</a></li>
+        </ul>
+        <p class="copyright">IranEtesal © 2019</p>
+        <p class="lead copyright" style="margin-top: 1px;">
+          Design and Develope by EnigmaGroup.ir
+        </p>
+      </footer>
+
+      <div class="modal fade" role="dialog" tabindex="-1" id="loginModal">
+        <div
+          class="modal-dialog modal-sm modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header d-md-flex align-items-center">
+              <h4 class="modal-title">ورود به فروشگاه&nbsp;</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body text-right">
+              <form>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="شماره تلفن یا ایمیل"
+                  style="margin-bottom: 16px;"
+                /><input
+                  class="form-control"
+                  type="password"
+                  placeholder="رمز عبور"
+                  style="margin-bottom: 16px;"
+                />
+              </form>
+              <button
+                class="btn btn-success btn-block btn-sm"
+                type="submit"
+                style="margin-bottom: 16px;"
+              >
+                ورود
+              </button>
+              <div class="text-center">
+                <i
+                  class="fas fa-sms"
+                  style="color: rgb(40,167,69);font-size: 32px;margin-right: 5px;"
+                ></i>
+              </div>
+            </div>
+            <div class="modal-footer text-center d-flex flex-column">
+              <a href="Signup.html" style="margin-bottom: 0px;font-size: 13px;"
+                >عضو سایت نیستید؟ ساخت حساب کاربری</a
+              ><a href="#" style="margin-bottom: 0px;font-size: 13px;"
+                >فراموشی رمز عبور</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
