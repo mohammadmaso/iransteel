@@ -79,8 +79,9 @@
 
         <i
           class="large inverted shopping cart icon m-2 header-icon"
-          data-toggle="popover"
-          id="BasketPopover"
+          data-target="#basketModal"
+          data-backdrop="true"
+          data-toggle="modal"
         ></i>
         <i
           class="large inverted user icon m-2 header-icon yellow"
@@ -95,15 +96,15 @@
 
     <div class="container mt-5 mb-3">
       <div class="row">
-        <div class="col mr-1 ml-1">
+        <div class="col mb-3">
           <div class="border rounded p-3 text-right">
             <h4><i class="user icon m-2"></i>پروفایل کاربری</h4>
             <strong><i class=" circle icon m-2"></i>شرکت سازه آرمان</strong>
             <hr />
 
             <nav class="nav flex-column">
-              <a class="nav-link active" href="#">سابقه خرید</a>
-              <a class="nav-link" href="#">تنظیمات پروفایل</a>
+              <a class="nav-link active" href="Profile.html">سابقه خرید</a>
+              <a class="nav-link" href="profile-detail.html">تنظیمات پروفایل</a>
               <a class="nav-link btn btn-danger mt-2" href="#"
                 >خروج از پروفایل</a
               >
@@ -114,120 +115,38 @@
         <div class="col-md-8">
           <div class="border rounded p-3 text-right">
             <!--item-->
-            <div class="mb-2">
-              <h4>خرید شماره ۲۵۸۷۵</h4>
-              <span
-                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
-                مقدار : زانویی مانیسمان | ۸ بسته</span
-              >
-              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
-              <span
-                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
-                  class="badge badge-pill badge-success"
-                  >پرداخت شده</span
-                ></span
-              >
-              <br />
-              <a class="btn btn-sm  btn-outline-info mt-2 "
-                >دانلود پیش فاکتور</a
-              >
-              <hr />
-            </div>
-            <div class="mb-2">
-              <h4>خرید شماره ۲۵۸۷۵</h4>
-              <span
-                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
-                مقدار : زانویی مانیسمان | ۸ بسته</span
-              >
-              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
-              <span
-                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
-                  class="badge badge-pill badge-success"
-                  >پرداخت شده</span
-                ></span
-              >
-              <br />
-              <a class="btn btn-sm  btn-outline-info mt-2 "
-                >دانلود پیش فاکتور</a
-              >
-              <hr />
-            </div>
-            <div class="mb-2">
-              <h4>خرید شماره ۲۵۸۷۵</h4>
-              <span
-                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
-                مقدار : زانویی مانیسمان | ۸ بسته</span
-              >
-              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
-              <span
-                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
-                  class="badge badge-pill badge-danger"
-                  >پرداخت نشده</span
-                ></span
-              >
-              <br />
-              <a class="btn btn-sm  btn-outline-info mt-2 "
-                >دانلود پیش فاکتور</a
-              >
-              <hr />
-            </div>
-            <div class="mb-2">
-              <h4>خرید شماره ۲۵۸۷۵</h4>
-              <span
-                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
-                مقدار : زانویی مانیسمان | ۸ بسته</span
-              >
-              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
-              <span
-                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
-                  class="badge badge-pill badge-success"
-                  >پرداخت شده</span
-                ></span
-              >
-              <br />
-              <a class="btn btn-sm  btn-outline-info mt-2 "
-                >دانلود پیش فاکتور</a
-              >
-              <hr />
-            </div>
-            <div class="mb-2">
-              <h4>خرید شماره ۲۵۸۷۵</h4>
-              <span
-                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
-                مقدار : زانویی مانیسمان | ۸ بسته</span
-              >
-              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
-              <span
-                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
-                  class="badge badge-pill badge-success"
-                  >پرداخت شده</span
-                ></span
-              >
-              <br />
-              <a class="btn btn-sm  btn-outline-info mt-2 "
-                >دانلود پیش فاکتور</a
-              >
-              <hr />
-            </div>
-            <div class="mb-2">
-              <h4>خرید شماره ۲۵۸۷۵</h4>
-              <span
-                ><i class="arrow alternate circle left icon ml-1"></i>محصول و
-                مقدار : زانویی مانیسمان | ۸ بسته</span
-              >
-              <span><i class="calendar icon ml-1"></i>تاریخ خرید۱۳۹۸/۸/۹ </span>
-              <span
-                ><i class="check icon ml-1"></i>وضعیت خرید : &nbsp;<span
-                  class="badge badge-pill badge-success"
-                  >پرداخت شده</span
-                ></span
-              >
-              <br />
-              <a class="btn btn-sm  btn-outline-info mt-2 "
-                >دانلود پیش فاکتور</a
-              >
-              <hr />
-            </div>
+
+            <h4><i class="info icon "></i>مشخصات شما</h4>
+            <hr />
+            
+            <strong>نام : </strong>
+            <input type="tex" class="form-control m-1"/>
+            <br>
+            <strong>نام خانوادگی :  </strong>
+            <input type="tex" class="form-control m-1"/>
+            <br>
+            <strong>شماره ملی :  </strong>
+            <input type="number" class="form-control m-1"/>
+            <br>
+            <strong>نام شرکت  : </strong>
+            <input type="text" class="form-control m-1"/>
+            <hr>
+            <strong> آدرس شما  : </strong>
+            <textarea class="form-control m-1" rows="3"></textarea>
+            <hr>
+            <strong> ایمیل :  </strong>
+            <input type="email" class="form-control m-1"/>
+            <hr>
+            <strong>رمز عبور فعلی : </strong>
+            <input type="password" class="form-control m-1"/>
+            <hr>
+            <strong>رمز عبور جدید :  </strong>
+            <input type="password" class="form-control m-1"/>
+            <hr>
+            <strong> تکرار رمز عبور :  </strong>
+            <input type="password" class="form-control m-1"/>
+            <hr>
+            <a class="btn btn-success" href="profile-detail.html"> تایید و ثبت </a>
           </div>
         </div>
       </div>
@@ -250,6 +169,99 @@
           Design and Develope by EnigmaGroup.ir
         </p>
       </footer>
+
+      <!--basket modal-->
+
+      <div class="modal fade" role="dialog" tabindex="-1" id="basketModal">
+        <div
+          class="modal-dialog modal modal-lg modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">سبد خرید شما&nbsp;</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped text-right">
+                <thead>
+                  <tr>
+                    <th scope="col">شماره</th>
+                    <th scope="col">نام محصول</th>
+                    <th scope="col">رده</th>
+                    <th scope="col">تعداد</th>
+                    <th scope="col">قیمت واحد(تومان)</th>
+                    <th scope="col">قیمت کل(تمان)</th>
+                    <th scope="col">حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">۱</th>
+                    <td>زانویی | مانیسمان</td>
+                    <td>۴۰</td>
+                    <td>
+                      <input
+                        type="number"
+                        class="form-control mb-2"
+                        id="numberOf"
+                        placeholder="تعداد"
+                      />
+                    </td>
+                    <td>۲۰,۰۰۰</td>
+                    <td>۴۲۰,۰۰۰</td>
+                    <td><i class="icon close red "></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">۲</th>
+                    <td>زانویی | مانیسمان</td>
+                    <td>۴۰</td>
+                    <td>
+                      <input
+                        type="number"
+                        class="form-control mb-2"
+                        id="numberOf"
+                        placeholder="تعداد"
+                      />
+                    </td>
+                    <td>۲۰,۰۰۰</td>
+                    <td>۴۲۰,۰۰۰</td>
+                    <td><i class="icon close red "></i></td>
+                  </tr>
+                  <tr>
+                    <td class="table-success"></td>
+                    <td class="table-success">مجموع قیمت</td>
+
+                    <td class="table-success"></td>
+
+                    <td class="table-success"></td>
+
+                    <td class="table-success"></td>
+
+                    <td class="table-success">۴۲۰,۰۰۰</td>
+                    <td class="table-success"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-info btn-block btn-sm m-1" type="submit">
+                تایید سبد خرید و پرداخت
+              </button>
+              <button class="btn btn-danger btn-block btn-sm m-1" type="submit">
+                خذف تمامی موارد
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="modal fade" role="dialog" tabindex="-1" id="loginModal">
         <div

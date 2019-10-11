@@ -80,8 +80,9 @@
 
         <i
           class="large inverted shopping cart icon m-2 header-icon"
-          data-toggle="popover"
-          id="BasketPopover"
+          data-target="#basketModal"
+          data-backdrop="true"
+          data-toggle="modal"
         ></i>
         <i
           class="large inverted user icon m-2 header-icon"
@@ -132,7 +133,7 @@
               </div>
             </div>
           </div>
-
+          <!--items-->
           <div class="col-md-8">
             <!--pagination-->
 
@@ -167,19 +168,21 @@
                         class="col d-flex flex-column align-items-md-end align-items-lg-start "
                       >
                         <h4 class="m-2">
-                          زانویی  
+                          زانویی
                           <span class="badge badge-primary">درزدار</span>
                         </h4>
                         <div class="m-2 border rounded p-1">
                           <div class="ml-1">
-                          <i class="icon arrows alternate horizontal large"></i>
-                          15 اینچ
-                        </div></div>
+                            <i
+                              class="icon arrows alternate horizontal large"
+                            ></i>
+                            15 اینچ
+                          </div>
+                        </div>
                         <div>
                           <button
                             class="btn btn-outline-primary m-2"
                             type="button"
-                            
                           >
                             اضافه کردن به سبد خرید&nbsp;</button
                           ><button
@@ -192,7 +195,6 @@
                       </div>
                     </div>
                   </li>
-                  
                 </ul>
               </div>
             </div>
@@ -235,80 +237,79 @@
       </div>
     </div>
     <div class="footer-basic" style="background-color: rgb(37, 37, 37);">
-        <footer>
-          <div class="social">
-            <a class="fa fa-instagram"> </a>
-            <a class="fa fa-telegram"></a>
-          </div>
-          <ul class="list-inline" style="color: rgb(239,239,239);">
-            <li class="list-inline-item"><a href="#">صفحه اصلی</a></li>
-            <li class="list-inline-item"><a href="#">محصولات</a></li>
-            <li class="list-inline-item"><a href="#">درباره ما</a></li>
-            <li class="list-inline-item"><a href="#">ارتباط با ما</a></li>
-          </ul>
-          <p class="copyright">IranEtesal © 2019</p>
-          <p class="lead copyright" style="margin-top: 1px;">
-            Design and Develope by EnigmaGroup.ir
-          </p>
-        </footer>
-  
-        <div class="modal fade" role="dialog" tabindex="-1" id="loginModal">
-          <div
-            class="modal-dialog modal-sm modal-dialog-centered"
-            role="document"
-          >
-            <div class="modal-content">
-              <div class="modal-header d-md-flex align-items-center">
-                <h4 class="modal-title">ورود به فروشگاه&nbsp;</h4>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body text-right">
-                <form>
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="شماره تلفن یا ایمیل"
-                    style="margin-bottom: 16px;"
-                  /><input
-                    class="form-control"
-                    type="password"
-                    placeholder="رمز عبور"
-                    style="margin-bottom: 16px;"
-                  />
-                </form>
-                <button
-                  class="btn btn-success btn-block btn-sm"
-                  type="submit"
+      <footer>
+        <div class="social">
+          <a class="fa fa-instagram"> </a>
+          <a class="fa fa-telegram"></a>
+        </div>
+        <ul class="list-inline" style="color: rgb(239,239,239);">
+          <li class="list-inline-item"><a href="#">صفحه اصلی</a></li>
+          <li class="list-inline-item"><a href="#">محصولات</a></li>
+          <li class="list-inline-item"><a href="#">درباره ما</a></li>
+          <li class="list-inline-item"><a href="#">ارتباط با ما</a></li>
+        </ul>
+        <p class="copyright">IranEtesal © 2019</p>
+        <p class="lead copyright" style="margin-top: 1px;">
+          Design and Develope by EnigmaGroup.ir
+        </p>
+      </footer>
+
+      <div class="modal fade" role="dialog" tabindex="-1" id="loginModal">
+        <div
+          class="modal-dialog modal-sm modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header d-md-flex align-items-center">
+              <h4 class="modal-title">ورود به فروشگاه&nbsp;</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body text-right">
+              <form>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="شماره تلفن یا ایمیل"
                   style="margin-bottom: 16px;"
-                >
-                  ورود
-                </button>
-                <div class="text-center">
-                  <i
-                    class="fas fa-sms"
-                    style="color: rgb(40,167,69);font-size: 32px;margin-right: 5px;"
-                  ></i>
-                </div>
+                /><input
+                  class="form-control"
+                  type="password"
+                  placeholder="رمز عبور"
+                  style="margin-bottom: 16px;"
+                />
+              </form>
+              <button
+                class="btn btn-success btn-block btn-sm"
+                type="submit"
+                style="margin-bottom: 16px;"
+              >
+                ورود
+              </button>
+              <div class="text-center">
+                <i
+                  class="fas fa-sms"
+                  style="color: rgb(40,167,69);font-size: 32px;margin-right: 5px;"
+                ></i>
               </div>
-              <div class="modal-footer text-center d-flex flex-column">
-                <a href="Signup.html" style="margin-bottom: 0px;font-size: 13px;"
-                  >عضو سایت نیستید؟ ساخت حساب کاربری</a
-                ><a href="#" style="margin-bottom: 0px;font-size: 13px;"
-                  >فراموشی رمز عبور</a
-                >
-              </div>
+            </div>
+            <div class="modal-footer text-center d-flex flex-column">
+              <a href="Signup.html" style="margin-bottom: 0px;font-size: 13px;"
+                >عضو سایت نیستید؟ ساخت حساب کاربری</a
+              ><a href="#" style="margin-bottom: 0px;font-size: 13px;"
+                >فراموشی رمز عبور</a
+              >
             </div>
           </div>
         </div>
-        
       </div>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="loginModal">
       <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -361,6 +362,97 @@
         </div>
       </div>
     </div>
+    <!--basket modal-->
+    <div class="modal fade" role="dialog" tabindex="-1" id="basketModal">
+        <div
+          class="modal-dialog modal modal-lg modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">سبد خرید شما&nbsp;</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              <table class="table table-striped text-right">
+                <thead>
+                  <tr>
+                    <th scope="col">شماره</th>
+                    <th scope="col">نام محصول</th>
+                    <th scope="col">رده</th>
+                    <th scope="col">تعداد</th>
+                    <th scope="col">قیمت واحد(تومان)</th>
+                    <th scope="col">قیمت کل(تمان)</th>
+                    <th scope="col">حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">۱</th>
+                    <td>زانویی | مانیسمان</td>
+                    <td>۴۰</td>
+                    <td>
+                      <input
+                        type="number"
+                        class="form-control mb-2"
+                        id="numberOf"
+                        placeholder="تعداد"
+                      />
+                    </td>
+                    <td>۲۰,۰۰۰</td>
+                    <td>۴۲۰,۰۰۰</td>
+                    <td><i class="icon close red "></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">۲</th>
+                    <td>زانویی | مانیسمان</td>
+                    <td>۴۰</td>
+                    <td>
+                      <input
+                        type="number"
+                        class="form-control mb-2"
+                        id="numberOf"
+                        placeholder="تعداد"
+                      />
+                    </td>
+                    <td>۲۰,۰۰۰</td>
+                    <td>۴۲۰,۰۰۰</td>
+                    <td><i class="icon close red "></i></td>
+                  </tr>
+                  <tr>
+                    <td class="table-success"></td>
+                    <td class="table-success">مجموع قیمت</td>
+
+                    <td class="table-success"></td>
+
+                    <td class="table-success"></td>
+
+                    <td class="table-success"></td>
+
+                    <td class="table-success">۴۲۰,۰۰۰</td>
+                    <td class="table-success"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-info btn-block btn-sm m-1" type="submit">
+                تایید سبد خرید و پرداخت
+              </button>
+              <button class="btn btn-danger btn-block btn-sm m-1" type="submit">
+                خذف تمامی موارد
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
